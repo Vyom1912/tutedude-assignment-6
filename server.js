@@ -61,6 +61,27 @@ const server = http.createServer((req, res) => {
 
       res.end(data);
     });
+  } else if (req.url === "/style.css") {
+    const filePath = path.join(__dirname, "page", "style.css");
+
+    fs.readFile(filePath, "utf-8", (err, data) => {
+      if (err) {
+        console.error("Error reading CSS:", err);
+
+        res.writeHead(500, {
+          "Content-Type": "text/plain",
+        });
+
+        res.end("500 - Internal Server Error");
+        return;
+      }
+
+      res.writeHead(200, {
+        "Content-Type": "text/css",
+      });
+
+      res.end(data);
+    });
   } else {
     const filePath = path.join(__dirname, "page", "404.html");
     fs.readFile(filePath, "utf-8", (err, data) => {
