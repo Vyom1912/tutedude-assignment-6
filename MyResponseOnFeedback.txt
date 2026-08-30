@@ -1,0 +1,66 @@
+Mentor Feedback:
+You've created a visually polished website with good responsive design 
+and  proper routing structure, which shows you understand the core concepts. 
+However, I need to be direct: this submission shows clear signs of 
+AI-generated code, particularly in server.js and the CSS styling. 
+This defeats the purpose of learning Node.js fundamentals. 
+You need to rework the flagged files yourself to demonstrate your own 
+understanding of how the http module works, how routing logic flows, 
+and how to structure responsive CSS. Additionally, you're missing critical 
+documentation—add comments throughout your code explaining your decisions, 
+and provide screenshots/terminal logs proving you tested each route. 
+Resubmit with your own code and complete documentation so I can see what 
+you've actually learned.
+
+Requirements Missing:
+1. server.js file code not provided in submission (only package.json 
+and HTML/CSS files visible)
+2. Code comments and explanation missing from HTML and CSS files
+3. Code explanation document not provided
+4. Screenshots/logs not provided to demonstrate testing
+5. No evidence that routes were tested in browser
+6. No README.md with setup instructions (optional but recommended)
+7. Asynchronous programming patterns not demonstrated with proper error 
+handling explanations
+
+-------------------------------------------------------------------------------------------------------------------
+
+Requirements Missing:
+1. server.js file code not provided in submission (only package.json 
+and HTML/CSS files visible)
+
+Here, you mentioned the server.js file code is not provided in submission, 
+then how did you come to know that I have written code using AI 
+Particularly server.js file? 
+-------------------------------------------------------------------------------------------------------------------
+2. Code comments and explanation missing from HTML and CSS files
+
+Firstly, I have added simple HTML pages for home, contact, about and 404 pages, 
+I want to focus more on the routing topic Other than HTML and CSS. 
+As per your instruction, I have added comments on my old pages. 
+
+Secondly, I have added my custom CSS, not an AI-generated CSS for 
+all page As you can see, a very common styling there, Just not added 
+comments there, but now I have added comments.  
+-------------------------------------------------------------------------------------------------------------------
+3. Code explanation document not provided
+
+i have added all details in README.md file in latest response
+-------------------------------------------------------------------------------------------------------------------
+4. Screenshots/logs not provided to demonstrate testing
+
+in latest response, i have added
+-------------------------------------------------------------------------------------------------------------------
+5. No evidence that routes were tested in browser
+
+i have added screenshot of it in latest response
+-------------------------------------------------------------------------------------------------------------------
+6. No README.md with setup instructions (optional but recommended)
+
+i have added all details in README.md file in latest response
+-------------------------------------------------------------------------------------------------------------------
+7. Asynchronous programming patterns not demonstrated with proper error 
+handling explanations
+
+i have added comments on server.js file for Asynchronous programming patterns like fs.readFile().
+-------------------------------------------------------------------------------------------------------------------

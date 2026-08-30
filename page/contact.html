@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Laundry Service</title>
     <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd0de70807.js"
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
+      <!-- Links used to navigate between Node.js routes -->
+      <!--  like /home, /about, /contact -->
       <nav class="flex">
         <div class="logo">LOGO</div>
         <div class="nav-links flex">
@@ -16,14 +21,14 @@
           <a href="/about">About Us</a>
           <a href="/contact">Contect Us</a>
         </div>
-
+        <!-- to display username for future purpose -->
         <div class="resp-box flex">
           <div class="name">UserName</div>
           <i class="fa-solid fa-bars resp"></i>
         </div>
       </nav>
     </header>
-
+    <!-- Main navigation section -->
     <main class="flex">
       <section class="left flex">
         <h1>Contact Us</h1>
@@ -34,4 +39,20 @@
       </section>
     </main>
   </body>
+  <script>
+    // mobile nav with help of using CSS and JavaScript
+    const burger = document.querySelector(".resp");
+    const navLinks = document.querySelector(".nav-links");
+
+    // togglr class, so css makes it better ux
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("respDisplay");
+    });
+    // remove class aftr clicking on 'a'
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("respDisplay");
+      });
+    });
+  </script>
 </html>

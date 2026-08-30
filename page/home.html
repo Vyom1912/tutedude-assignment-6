@@ -11,6 +11,9 @@
   </head>
   <body>
     <header>
+      <!-- Links used to navigate between Node.js routes -->
+      <!--  like /home, /about, /contact -->
+
       <nav class="flex">
         <div class="logo">LOGO</div>
         <div class="nav-links flex">
@@ -18,14 +21,16 @@
           <a href="/about">About Us</a>
           <a href="/contact">Contect Us</a>
         </div>
-
+        <!-- to display username for future purpose -->
         <div class="resp-box flex">
           <div class="name">UserName</div>
           <i class="fa-solid fa-bars resp"></i>
         </div>
       </nav>
     </header>
+    <!-- Main navigation section -->
     <main class="flex">
+      <!-- add  info about laundry services -->
       <section class="left flex">
         <h2>
           Revitalize your <br />clothes with expert <br />
@@ -43,6 +48,7 @@
         <button class="btn">Book a service today!</button>
       </section>
       <section class="right flex">
+        <!-- add image from google for better ui -->
         <img
           src="https://hi5laundromat.in/wp-content/uploads/2025/05/pngtree-home-service-house-cleaning-and-laundry-wash-png-image_15072816.png"
           alt="Laundry Service Image" />
@@ -50,11 +56,15 @@
     </main>
   </body>
   <script>
+    // mobile nav with help of using CSS and JavaScript
     const burger = document.querySelector(".resp");
     const navLinks = document.querySelector(".nav-links");
+
+    // togglr class, so css makes it better ux
     burger.addEventListener("click", () => {
       navLinks.classList.toggle("respDisplay");
     });
+    // remove class aftr clicking on 'a'
     document.querySelectorAll(".nav-links a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("respDisplay");
